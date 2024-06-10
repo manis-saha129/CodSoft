@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+header {
+    background: linear-gradient(rgb(1, 110, 194), rgb(90, 167, 255));
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin: 5px;  
+    box-shadow: 5px 5px 5px blue;
+    border-radius: 5px;
+}
+
+.nav-links {
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0px 30px;
+}
+
+.nav-links a {
+    position: relative;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover{
+    box-shadow: 5px 5px 10px blue;
+    border-radius: 5px;
+}
+
+section {
+    padding: 50px 20px;
+    background-color: white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+section:nth-of-type(even) {
+    background-color: #f1f1f1;
+}
+
+.about {
+    background-image: url(assets/images/sky.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+
+section h1 {
+    color: white;
+    font-size: 32px;
+    text-shadow: 5px 5px 10px blue;
+}
+
+section p {
+    background-color: rgba(254, 246, 246, 0.616);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skills{
+    background-image: url(assets/images/skills.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+    height: 30vh;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li {
+    background: linear-gradient(rgb(0, 0, 132), rgb(0, 61, 159));
+    color: white;
+    padding: 20px 30px;
+    border: 3px solid blue;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: white;
+    font-size: 32px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.projects {
+    background-image: url(assets/images/projects.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects div div h3 {
+    font-size: 24px;
+    text-shadow: 5px 5px 5px grey;
+}
+
+.projects div div p {
+    font-size: 20px;
+    text-shadow: 5px 5px 5px grey;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project-card a {
+    display: block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.resume {
+    background-image: url(assets/images/resume.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.resume a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.resume a:hover {
+    background-color: rgb(1, 97, 253);
+}
+
+.contact{
+    background-image: url(assets/images/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    height: 200px
+}
+
+.contact button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.contact button:hover {
+    background-color: rgb(0, 100, 214);
+}
+
+footer {
+    background: linear-gradient(rgb(1, 110, 194), rgb(90, 167, 255));
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 965px) {
+    .skills{
+        height: 55vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-links {
+        position: sticky;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .nav-links {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .nav-links {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
