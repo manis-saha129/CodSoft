@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -103,7 +103,7 @@ nav {
     text-align: center;
 }
 
-h2{
+h2 {
     background: linear-gradient(to left, rgb(255, 123, 0), rgb(255, 70, 70));
     padding: 10px;
     color: white; 
@@ -211,14 +211,14 @@ footer {
     padding: 20px 0;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
     .nav-links{
         display: block;
     }
     
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px) {
     .hero-content {
         padding: 20px 50px;
     }

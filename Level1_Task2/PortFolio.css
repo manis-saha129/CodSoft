@@ -29,7 +29,7 @@ header {
     z-index: 1000;
 }
 
-nav{
+nav {
     display: flex;
 }
 
@@ -63,7 +63,7 @@ nav{
     font-weight: bold;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     box-shadow: 5px 5px 10px blue;
     border-radius: 5px;
 }
@@ -99,7 +99,7 @@ section p {
     border-radius: 5px;
 }
 
-.skills{
+.skills {
     background-image: url(assets/images/skills.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,7 +201,7 @@ section h2 {
     background-color: rgb(1, 97, 253);
 }
 
-.contact{
+.contact {
     background-image: url(assets/images/contact.png);
     background-repeat: no-repeat;
     background-size: cover;
